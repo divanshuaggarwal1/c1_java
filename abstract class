@@ -1,0 +1,21 @@
+abstract class HelloWorld {
+    abstract void check();
+}
+class HelloWorld1 extends HelloWorld  {
+    void check(){
+        System.out.println("you are in HelloWorld1 ");
+    }
+}
+class HelloWorld2 extends HelloWorld  {
+    void check(){
+        System.out.println("you are in HelloWorld2 ");
+    }
+}
+public class ct1{
+    public static void main(String[] args) {
+        HelloWorld1 a=new HelloWorld1();
+        a.check();
+        HelloWorld2 b=new HelloWorld2();
+        b.check();
+    }
+}
