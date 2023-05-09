@@ -1,0 +1,19 @@
+ class A1{
+        String name;
+       void show1(){
+           System.out.println("show a");
+        }
+    }
+   class B1 extends A1{
+        String color;
+        void show2(){
+            System.out.println("show b");
+        }
+    }
+    public class ct1 {
+    public static void main(String[] args) {
+        A1 ob= (A1)new B1();//upcasting
+        ob.show1();
+        B1 ob1= (B1)ob;//downcasting
+        ob1.show2();
+    }
